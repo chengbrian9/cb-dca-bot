@@ -17,8 +17,8 @@ def get_parameter_from_ssm(parameter_name):
     )
     return response['Parameter']['Value']
 
-API_KEY = get_parameter_from_ssm('cb_deposit_Apikey')
-API_SECRET = get_parameter_from_ssm('cb_deposit_ApiSecret')
+API_KEY = get_parameter_from_ssm('cb_deposit_apiKey')
+API_SECRET = get_parameter_from_ssm('cb_deposit_apiSecret')
 DEPOSIT_ID = get_parameter_from_ssm('cb_deposit_depositId')
 PAYMENT_METHOD = get_parameter_from_ssm('cb_deposit_paymentMethod')
 #Change your deposit amount and fiat currency
